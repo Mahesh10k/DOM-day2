@@ -251,6 +251,6 @@ var colors=["#C4E1F6","#E9EED9","#CBD2A4","#FEEE91","#FFE3E3","#FFE6A5","#E4E0E1
 for(i=0;i<data.length;i++){
   setTimeout(function(i){
   var divContainer=document.getElementById("container")
-    divContainer.innerHTML+=`<div style="width:200px; padding:40px; background-color:${colors[i]}; display:inline-block;margin:20px;box-shadow:3px 3px 3px gray"> <img style="width:200px ;"src="${data[i].image}"> <h3>${data[i].title} </h3><h2>Price: ${data[i].price}<h2><h4>Rating: ${data[i].rating.rate}</h4><button style="width:200px">Buy Now</button></div>`
+    divContainer.innerHTML+=`<div style="width:200px; padding:40px; background-color:${colors[i]}; display:inline-block;margin:20px;box-shadow:3px 3px 3px gray; border-radius:10px"> <img style="width:200px ; height:200px" src="${data[i].image}"> <h3>${data[i].title} </h3><h2>Price: ${data[i].price}<h2><h4>Rating: ${data[i].rating.rate}</h4><button style="width:200px">Buy Now</button></div>`
   },1000*i,i)
   }
